@@ -7,7 +7,7 @@ import Html.Attributes exposing (..)
 model =
     { result =
         { id = 1
-        , name = "TheSeamau5/elm-checkerboardgrid-tutorial"
+        , name = "samrrichards/elm-workshop"
         , stars = 66
         }
     }
@@ -26,7 +26,7 @@ main =
             , ul [ class "results" ]
                 [ li []
                     [ span [ class "star-count" ] [text (toString model.result.stars)]
-                    , span [] [text model.result.name]
+                    , a [href ("https://github.com/" ++ model.result.name)] [text model.result.name]
                     ]
                 ]
             ]
